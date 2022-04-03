@@ -13,8 +13,8 @@
         <textarea   id="text1" type="text" cols="100" rows="50" ></textarea><br><br>
     </div>
     <script>
-$('input[type=textarea]').bind('input propertychange', function() {
-  this.value = this.value.replaceAll(' ','.');
+$('#text1').bind('input propertychange', function() {
+  this.value = this.value.replaceAll(' ',',');
 });
     </script>
 </html>
