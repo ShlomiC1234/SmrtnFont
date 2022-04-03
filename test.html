@@ -7,7 +7,15 @@
     vertical-align: top;direction: rtl;
  }
     </style>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
     <div>
         <textarea   id="text1" type="text" cols="100" rows="50" ></textarea><br><br>
     </div>
+    <script>
+$('input[type=textarea]').bind('input propertychange', function() {
+  this.value = this.value.replaceAll(' ','.');
+});
+VM971:1 Uncaught Type
+    </script>
 </html>
