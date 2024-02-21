@@ -1,12 +1,33 @@
 <html>
-    <style>
-         @font-face { font-family: Delicious; src: url('yishrael.ttf');}
-        #text1 { font-family: Delicious;     width: 1017px;
-    height: 1000px;
-    text-align: center;
-    vertical-align: top;direction: rtl;   
- }
-    </style>
+<style>
+    @font-face { 
+        font-family: DeliciousHebrew; 
+        src: url('yishrael.ttf'); /* Specify the path to your Hebrew font file */
+    }
+
+    @font-face { 
+        font-family: DeliciousEnglish; 
+        src: url('delicious-english.ttf'); /* Specify the path to your English font file */
+    }
+
+    #text1 { 
+        width: 1017px;
+        height: 1000px;
+        text-align: center;
+        font-size: 40px;
+        vertical-align: top;
+        direction: rtl;
+    }
+
+    #text1:lang(en) { 
+        font-family: DeliciousEnglish; 
+    }
+
+    #text1:lang(he) { 
+        font-family: DeliciousHebrew; 
+    }
+</style>
+
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     
     <div>
